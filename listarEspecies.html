@@ -31,7 +31,7 @@
                     <li class="nav-item"><a class="nav-link" href="index.hrml"></a></li>
                     <li class="nav-item" ><a class="nav-link" href="#">Crear Responsable</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Crear Paciente</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Crear Especie</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/crearEspecie.html">Crear Especie</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Crear Raza</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Acerca de</a></li>
                 </ul>
@@ -39,34 +39,16 @@
         </div>
     </nav>
     <main>
-        <div class="container d-flex justify-content-center">
-            <form class="col-lg-6 col-12">
-                <div class="col-12">
-                    <label for="nombre form-label">Nombre</label>
-                    <input class="form-control" type="text" name="nombre" id="nombre" required>
-                </div>
-                <div class="col-12">
-                    <label for="clasificacion form-label">Clasificación</label>
-                    <input type="text" class="form-control" name="clasificacion" id="clasificacion" required>
-                </div>
-                <div class="col-12">
-                    <label for="esperanza_vida">Ezperanza de vida</label>
-                    <input type="text" class="form-control" name="esperanza_vida" id="esperanza_vida" required>
-                </div>
-                <div class="col-12">
-                    <label for="peso_promedio">Peso Promedio</label>
-                    <input type="text" class="form-control" name="peso_promedio" id="peso_promedio" required>
-                </div>
-                <div class="col-12 mt-3 d-flex justify-content-center">
-                    <button  id="btnProcesar" class="btn btn-primary col-6" type="submit">Enviar</button>
-                </div>
-            </form>
+        <div class="container">
+            <table id="tabla_especies" class="table table-striped">
+
+            </table>
         </div>
     </main>
     <footer>
 
     </footer>
-    <script src="crearEspecie.js" type="module"></script>
+    <script src="listarEspecies.js" type="module"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>
